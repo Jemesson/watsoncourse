@@ -1,0 +1,6 @@
+Hear the game song,play_game
+Show me the game character,play_game
+I want to start the game,play_game
+Last stage of game,play_game
+Game over,finish_game
+Bye Bye,finish_game
