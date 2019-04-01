@@ -1,7 +1,6 @@
 {
   "name": "jema-watson",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-telegram-bot-api": "^0.28.0",
     "watson-developer-cloud": "^3.18.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jemesson/watsoncourse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jemesson/watsoncourse/issues"
+  },
+  "homepage": "https://github.com/Jemesson/watsoncourse#readme",
+  "description": ""
 }
