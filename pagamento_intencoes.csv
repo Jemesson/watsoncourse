@@ -1,0 +1,40 @@
+Quais são as formas de pagamento?,formas_pagamento
+Quero mudar a forma de pagamento,formas_pagamento
+"Eita, posso pagar de outra forma?",formas_pagamento
+Eu queria pagar a vista,formas_pagamento
+Desejo pagar a vista,formas_pagamento
+Eu queria pagar parcelado,formas_pagamento
+Desejo pagar pagarcelado,formas_pagamento
+Pagar em boleto bancario,pagamento_vista
+Pagar em débito em conta,pagamento_vista
+Pagar em cartão de crédito,pagamento_vista
+Pagar em Ame digital,pagamento_vista
+Quero o boleto,pagamento_vista
+Quero a segunda via boleto,pagamento_vista
+Imprima boleto,pagamento_vista
+Imprima a segunda via,pagamento_vista
+Desejo pagar com bankline,pagamento_vista
+Desejo pagar com visa,pagamento_vista
+Desejo pagar com vale presente,pagamento_vista
+pagar parcelado,pagamento_parcelado
+Quero pagar o valor parcial,pagamento_parcelado
+Quero pagar em 2x,pagamento_parcelado
+Quero pagar em 3x,pagamento_parcelado
+Quero pagar em 4x,pagamento_parcelado
+Quero pagar em 5x,pagamento_parcelado
+Quero pagar em 6x,pagamento_parcelado
+Desejo pagar em 2x,pagamento_parcelado
+Desejo pagar em 3x,pagamento_parcelado
+Desejo pagar em 4x,pagamento_parcelado
+Desejo pagar em 5x,pagamento_parcelado
+Desejo pagar em 6x,pagamento_parcelado
+Quanto deu a conta?,finalizar_compra
+Quanto ficou a conta?,finalizar_compra
+Queria saber o total?,finalizar_compra
+Deu quanto mesmo?,finalizar_compra
+Desejo finalizar a compra,finalizar_compra
+Finalize a compra,finalizar_compra
+Desejo cancelar a compra,cancelar_compra
+Quero cancelar a compra,cancelar_compra
+Desejo o estorno a compra,cancelar_compra
+Quero o estorno a compra,cancelar_compra

@@ -1,0 +1,6 @@
+formaPagamento,avista,parcelado
+pagamento,boleto,débito,crédito,vale,ame digital
+usuario,email,"/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/"
+usuario,senha,"/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/"
+usuario,cpf,"/^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/"
+endereco,cep,numero,complemento
