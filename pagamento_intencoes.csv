@@ -1,10 +1,11 @@
+Gostaria de fazer pagamentos,formas_pagamento
 Quais são as formas de pagamento?,formas_pagamento
 Quero mudar a forma de pagamento,formas_pagamento
 "Eita, posso pagar de outra forma?",formas_pagamento
 Eu queria pagar a vista,formas_pagamento
 Desejo pagar a vista,formas_pagamento
 Eu queria pagar parcelado,formas_pagamento
-Desejo pagar pagarcelado,formas_pagamento
+Desejo pagar pagar parcelado,formas_pagamento
 Pagar em boleto bancario,pagamento_vista
 Pagar em débito em conta,pagamento_vista
 Pagar em cartão de crédito,pagamento_vista
@@ -16,6 +17,7 @@ Imprima a segunda via,pagamento_vista
 Desejo pagar com bankline,pagamento_vista
 Desejo pagar com visa,pagamento_vista
 Desejo pagar com vale presente,pagamento_vista
+Desejo imprimir o boleto,pagamento_vista
 pagar parcelado,pagamento_parcelado
 Quero pagar o valor parcial,pagamento_parcelado
 Quero pagar em 2x,pagamento_parcelado
@@ -28,12 +30,20 @@ Desejo pagar em 3x,pagamento_parcelado
 Desejo pagar em 4x,pagamento_parcelado
 Desejo pagar em 5x,pagamento_parcelado
 Desejo pagar em 6x,pagamento_parcelado
-Quanto deu a conta?,finalizar_compra
-Quanto ficou a conta?,finalizar_compra
-Queria saber o total?,finalizar_compra
-Deu quanto mesmo?,finalizar_compra
-Desejo finalizar a compra,finalizar_compra
-Finalize a compra,finalizar_compra
+Eita posso pagar com dois cartões,pagamento_parcelado
+Posso pagar com mais de 1 cartão?,pagamento_parcelado
+Gostaria de realizar o pagamento das compras,realizar_compra
+Gostaria de fechar a conta e pagar,realizar_compra
+Desejo pagar a conta, realizar_compra
+Quanto deu a conta?,realizar_compra
+Pode me ajudar para pagar as minhas compras,realizar_compra
+Quanto ficou a conta?,realizar_compra
+Queria saber o total?,realizar_compra
+Deu quanto mesmo?,realizar_compra
+Desejo finalizar a compra,realizar_compra
+Finalize a compra,realizar_compra
+Gostaria de realizar pagamentos,realizar_compra
+Quero fazer o pagamento,realizar_compra
 Desejo cancelar a compra,cancelar_compra
 Quero cancelar a compra,cancelar_compra
 Desejo o estorno a compra,cancelar_compra

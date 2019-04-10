@@ -12,43 +12,49 @@ const watsonAssistant = new AssistantV1({
     "url": "https://gateway.watsonplatform.net/assistant/api"  
 });
 
-const TOKEN = '860621666:AAE0_Gy_m2jqD1eC9CEzN-jRspLGni67xKU'
+const TOKEN = '777317438:AAEffNujujC4mUv10sQtz9-5bEAt9n4hJjI'
 
 const bot = new TelegramBot(TOKEN, { polling: true })
+
 
 bot.on('message', (msg) => {
   const params = {
     input: { text: msg.text },
-    workspace_id: '30ff0ea3-0c75-4abb-9a02-cc1eb854c0b1',
+    workspace_id: '60e2e671-ad13-4043-af75-0f9eed339d44',
     text: msg.text,
     context  
   };
   
   watsonAssistant.message(params, (err, response) => {
-    console.log(JSON.stringify(response));
-
     if(err) {
       bot.sendMessage(msg.chat.id, 'Eita... deu algum  erro na API :S');
     }
     
-    let dialog = response.output.generic[0];
+    let dialogs = response.output.generic;
     context = response.context;
     
-    if (dialog.response_type === 'image') {
-      const photo = dialog.source;
-      bot.sendPhoto(msg.chat.id, photo, {caption: dialog.title});  
-    } else if(dialog.response_type === 'option') {
-        const options = {
-            reply_to_message_id: msg.message_id,
-            reply_markup: JSON.stringify({
-              keyboard: [
-                dialog.options.map(option => option.label)
-              ]
-            })
-        };
-        bot.sendMessage(msg.chat.id, 'Test?', options);
-    } else {
-      bot.sendMessage(msg.chat.id, response.output.text.join('\n'));  
-    }
+    dialogs.forEach(dialog => {    
+        console.warn("\n" + JSON.stringify(response));
+        switch (dialog.response_type) {
+            case 'image': 
+                const photo = dialog.source;
+                bot.sendPhoto(msg.chat.id, photo, {caption: dialog.title});  
+                break;
+            case 'option':
+                const options = {
+                    reply_to_message_id: msg.message_id,
+                    reply_markup: JSON.stringify({
+                    keyboard: [
+                        dialog.options.map(option => option.label)
+                    ]
+                    })
+                };
+                bot.sendMessage(msg.chat.id, 'Test?', options);
+                break;
+            case 'text':
+                bot.sendMessage(msg.chat.id, response.output.text.join('\n'));  
+                break;
+        }
+    });
   });
 })
